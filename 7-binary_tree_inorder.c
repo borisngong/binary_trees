@@ -5,7 +5,7 @@
  * @tree: represents pointer to the root node of the binary tree
  * @func: represent pointer to the function to call when each
  * node is traversed
- * Description: The function func traversal the binary tree through 
+ * Description: The function func traversal the binary tree through
  * inorder traversal and call the provided function for each node,
  * passing the value in the node as a parameter of the function
  * Return: always void
