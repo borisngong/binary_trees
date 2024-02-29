@@ -23,6 +23,11 @@ typedef struct binary_tree_s binary_tree_t;
 
 /* HELPER FUNCTIONS */
 void binary_tree_print(const binary_tree_t *);
+int binary_tree_is_perfect(const binary_tree_t *tree);
+unsigned char bt_is_leaf_helper(const binary_tree_t *node);
+const binary_tree_t *bt_get_leaf_helper(const binary_tree_t *tree);
+int bt_is_perfect_recursive_helper(const binary_tree_t *tree,
+                                   size_t leaf_depth, size_t level);
 
 /* PROTOTYPES */
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
@@ -41,5 +46,6 @@ size_t binary_tree_leaves(const binary_tree_t *tree);
 size_t binary_tree_nodes(const binary_tree_t *tree);
 int binary_tree_balance(const binary_tree_t *tree);
 int binary_tree_is_full(const binary_tree_t *tree);
+int binary_tree_is_perfect(const binary_tree_t *tree);
 
 #endif /* _BINARY_TREES_H_ */
