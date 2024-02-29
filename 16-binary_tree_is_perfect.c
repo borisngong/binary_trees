@@ -1,4 +1,12 @@
 #include "binary_trees.h"
+
+int binary_tree_is_perfect(const binary_tree_t *tree);
+unsigned char bt_is_leaf_helper(const binary_tree_t *node);
+size_t binary_tree_depth(const binary_tree_t *tree);
+const binary_tree_t *bt_get_leaf_helper(const binary_tree_t *tree);
+int bt_is_perfect_recursive_helper(const binary_tree_t *tree,
+                                   size_t leaf_depth, size_t level);
+
 /**
  * binary_tree_is_perfect - Responsible for checking if a binary tree
  * is perfect.
